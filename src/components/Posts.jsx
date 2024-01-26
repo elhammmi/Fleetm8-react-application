@@ -14,7 +14,6 @@ const Posts = () => {
         }
         const result = await response.json();
         setPost(result);
-        console.log(posts);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -25,7 +24,7 @@ const Posts = () => {
     <div className="bg-gray-200 p-4">
       <h1 className="text-3xl font-bold mb-8">Posts</h1>
       {posts.length > 0 &&
-        posts.map((post, index) => <Post key={index} {...post} />)}
+        posts.map((post) => <Post key={post.id} {...post} />)}
     </div>
   );
 };
