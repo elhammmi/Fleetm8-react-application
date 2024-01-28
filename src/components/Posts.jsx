@@ -33,7 +33,9 @@ const Posts = () => {
               pathname: `/posts/${post.id}`,
             }}
           >
-            <Post key={post.id} title={post.title} body={post.body} />
+            <div className="bg-white p-6 rounded-md shadow-md mb-4">
+              <Post key={post.id} title={post.title} body={post.body} />
+            </div>
           </Link>
         ))}
     </div>
