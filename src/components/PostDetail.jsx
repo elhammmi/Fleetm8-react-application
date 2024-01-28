@@ -11,7 +11,7 @@ const PostDetail = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [postData, setPostData] = useState();
   const [comments, setComments] = useState();
-  const { sendJsonMessage, lastJsonMessage, readyState } = useWebSocket(WS_URL);
+  const { sendJsonMessage, lastJsonMessage } = useWebSocket(WS_URL);
   const [showNotification, setShowNotification] = useState(false);
   const [notificationMessage, setNotificationMessage] = useState("");
   const { id } = useParams();
