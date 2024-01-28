@@ -5,9 +5,9 @@ import Comment from "./Comment";
 import { CommentForm } from "./CommentForm";
 import { Notification } from "./Notification";
 import useWebSocket from "react-use-websocket";
+import { API_URL, WS_URL } from "../constants";
 
 const PostDetail = (props) => {
-  const WS_URL = "wss://echo.websocket.org/";
   const [isOpen, setIsOpen] = useState(false);
   const [postData, setPostData] = useState();
   const [comments, setComments] = useState();
@@ -26,9 +26,7 @@ const PostDetail = (props) => {
   useEffect(() => {
     const fetchPostData = async () => {
       try {
-        const response = await fetch(
-          `https://jsonplaceholder.typicode.com/posts/${id}`
-        );
+        const response = await fetch(`${API_URL}/posts/${id}`);
         if (!response.ok) {
           return new Error("Network response was not ok");
         }
@@ -47,9 +45,7 @@ const PostDetail = (props) => {
   useEffect(() => {
     const fetchCommentsData = async () => {
       try {
-        const response = await fetch(
-          `https://jsonplaceholder.typicode.com/comments?postId=${id}`
-        );
+        const response = await fetch(`${API_URL}/comments?postId=${id}`);
         if (!response.ok) {
           return new Error("Network response was not ok");
         }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Post from "./Post";
 import { Link } from "react-router-dom";
+import { API_URL } from "../constants";
 
 const Posts = () => {
   const [posts, setPost] = useState([]);
@@ -8,9 +9,7 @@ const Posts = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(
-          "https://jsonplaceholder.typicode.com/posts"
-        );
+        const response = await fetch(`${API_URL}/posts`);
         if (!response.ok) {
           return new Error("Network response was not ok");
         }
