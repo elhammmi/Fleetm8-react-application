@@ -19,6 +19,7 @@ export const CommentForm = ({
       },
       ...comments,
     ]);
+    setNewComment("");
     sendJsonMessage({ description: "The new comment added" });
   };
 
