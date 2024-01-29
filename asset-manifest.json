@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fleetm8-react-application/static/css/main.839e657f.css",
+    "main.js": "/fleetm8-react-application/static/js/main.966d10c6.js",
+    "index.html": "/fleetm8-react-application/index.html",
+    "main.839e657f.css.map": "/fleetm8-react-application/static/css/main.839e657f.css.map",
+    "main.966d10c6.js.map": "/fleetm8-react-application/static/js/main.966d10c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.839e657f.css",
+    "static/js/main.966d10c6.js"
+  ]
+}
