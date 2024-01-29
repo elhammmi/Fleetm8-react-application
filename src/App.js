@@ -4,7 +4,7 @@ import PostDetail from "./components/PostDetail";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Posts />} />
         <Route path="posts/:id" element={<PostDetail />} />
