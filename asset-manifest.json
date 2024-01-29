@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fleetm8-react-application/static/css/main.839e657f.css",
-    "main.js": "/fleetm8-react-application/static/js/main.2732222c.js",
+    "main.js": "/fleetm8-react-application/static/js/main.c6946684.js",
     "index.html": "/fleetm8-react-application/index.html",
     "main.839e657f.css.map": "/fleetm8-react-application/static/css/main.839e657f.css.map",
-    "main.2732222c.js.map": "/fleetm8-react-application/static/js/main.2732222c.js.map"
+    "main.c6946684.js.map": "/fleetm8-react-application/static/js/main.c6946684.js.map"
   },
   "entrypoints": [
     "static/css/main.839e657f.css",
-    "static/js/main.2732222c.js"
+    "static/js/main.c6946684.js"
   ]
 }
